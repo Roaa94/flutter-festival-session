@@ -20,7 +20,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
         children: [
           ElevatedButton(
             onPressed: () => setState(() => animationToggle = !animationToggle),
-            child: Text(Translations.of(context)!.get('Toggle Animation')),
+            child: Text(Translations.of(context)!.get('Change The Container')),
           ),
           const SizedBox(height: 20),
           AnimatedContainer(

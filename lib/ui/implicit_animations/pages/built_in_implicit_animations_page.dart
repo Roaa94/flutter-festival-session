@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_align_and_opacity_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_container_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_default_text_style_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_padding_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_physical_model_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_positioned_directional_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_positioned_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_size_example.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
 // Built-in Implicit Animations Widgets
@@ -29,28 +24,8 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
       'widget': const AnimatedContainerExample(),
     },
     {
-      'title': 'AnimatedDefaultTextStyle',
-      'widget': const AnimatedDefaultTextStyleExample(),
-    },
-    {
-      'title': 'AnimatedPadding',
-      'widget': const AnimatedPaddingExample(),
-    },
-    {
-      'title': 'AnimatedPhysicalModel',
-      'widget': const AnimatedPhysicalModelExample(),
-    },
-    {
-      'title': 'AnimatedPositioned',
-      'widget': const AnimatedPositionedExample(),
-    },
-    {
-      'title': 'AnimatedPositionDirectional',
+      'title': 'AnimatedPositioned (or AnimatedPositionDirectional)',
       'widget': const AnimatedPositionDirectionalExample(),
-    },
-    {
-      'title': 'AnimatedSize',
-      'widget': const AnimatedSizeExample(),
     },
   ];
 
@@ -71,15 +46,19 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
               ),
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 ...List.generate(
                   builtInImplicitAnimationWidgets.length,
-                      (index) => Column(
+                  (index) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
                         builtInImplicitAnimationWidgets[index]['title'],
                         style: AppTextStyles.h1,
+                        textAlign: TextAlign.center,
                       ),
+                      const SizedBox(height: 10),
                       Container(
                         child: builtInImplicitAnimationWidgets[index]['widget'],
                         color: Colors.deepPurple.shade100,
