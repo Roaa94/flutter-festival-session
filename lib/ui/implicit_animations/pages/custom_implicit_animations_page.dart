@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/tween_animation_builder_example.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
 // Using TweenAnimationBuilder widget
@@ -22,6 +23,14 @@ class CustomImplicitAnimationsPage extends StatelessWidget {
                 style: AppTextStyles.body,
               ),
             ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 17),
+              child: Text(
+                'TweenAnimationBuilder',
+                style: AppTextStyles.h1,
+              ),
+            ),
+            const TweenAnimationBuilderExample(),
           ],
         ),
       ),
