@@ -83,7 +83,10 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
               builtInImplicitAnimationWidgets.length,
               (index) => Column(
                 children: [
-                  Text(builtInImplicitAnimationWidgets[index]['title']),
+                  Text(
+                    builtInImplicitAnimationWidgets[index]['title'],
+                    style: AppTextStyles.h1,
+                  ),
                   builtInImplicitAnimationWidgets[index]['widget'],
                   const SizedBox(height: 20),
                 ],
