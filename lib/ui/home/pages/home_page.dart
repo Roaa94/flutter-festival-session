@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                 },
                 onBuiltInPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const BuiltInImplicitAnimationsPage()),
+                    MaterialPageRoute(builder: (_) => BuiltInImplicitAnimationsPage()),
                   );
                 },
               ),

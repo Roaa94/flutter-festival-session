@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_align_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_container_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_default_text_style_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_opacity_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_padding_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_physical_model_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_positioned_directional_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_positioned_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_size_example.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
 // Built-in Implicit Animations Widgets
@@ -13,7 +22,46 @@ import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 // 8. AnimatedPositionDirectional
 // 9. AnimatedSize
 class BuiltInImplicitAnimationsPage extends StatelessWidget {
-  const BuiltInImplicitAnimationsPage({Key? key}) : super(key: key);
+  BuiltInImplicitAnimationsPage({Key? key}) : super(key: key);
+
+  final List<Map<String, dynamic>> builtInImplicitAnimationWidgets = [
+    {
+      'title': 'AnimatedAlign',
+      'widget': const AnimatedAlignExample(),
+    },
+    {
+      'title': 'AnimatedContainer',
+      'widget': const AnimatedContainerExample(),
+    },
+    {
+      'title': 'AnimatedDefaultTextStyle',
+      'widget': const AnimatedDefaultTextStyleExample(),
+    },
+    {
+      'title': 'AnimatedOpacity',
+      'widget': const AnimatedOpacityExample(),
+    },
+    {
+      'title': 'AnimatedPadding',
+      'widget': const AnimatedPaddingExample(),
+    },
+    {
+      'title': 'AnimatedPhysicalModel',
+      'widget': const AnimatedPhysicalModelExample(),
+    },
+    {
+      'title': 'AnimatedPositioned',
+      'widget': const AnimatedPositionedExample(),
+    },
+    {
+      'title': 'AnimatedPositionDirectional',
+      'widget': const AnimatedPositionDirectionalExample(),
+    },
+    {
+      'title': 'AnimatedSize',
+      'widget': const AnimatedSizeExample(),
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +79,16 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
                 style: AppTextStyles.body,
               ),
             ),
+            ...List.generate(
+              builtInImplicitAnimationWidgets.length,
+              (index) => Column(
+                children: [
+                  Text(builtInImplicitAnimationWidgets[index]['title']),
+                  builtInImplicitAnimationWidgets[index]['widget'],
+                  const SizedBox(height: 20),
+                ],
+              ),
+            )
           ],
         ),
       ),
