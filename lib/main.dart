@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/home/pages/home_page.dart';
 import 'package:flutter_festival/ui/providers/settings_provider.dart';
+import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
@@ -26,8 +27,12 @@ class MyApp extends StatelessWidget {
       supportedLocales: SettingsProvider.appLanguages.map((appLanguage) => Locale(appLanguage.locale)).toList(),
       theme: ThemeData(
         fontFamily: 'Cairo',
+        scaffoldBackgroundColor: Colors.grey.shade300,
         primaryColor: Colors.deepPurple,
         primarySwatch: Colors.deepPurple,
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: AppTextStyles.appBarTextStyle,
+        ),
       ),
       home: const HomePage(),
     );
