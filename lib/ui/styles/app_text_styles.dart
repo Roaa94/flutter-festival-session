@@ -6,4 +6,10 @@ class AppTextStyles {
     fontFamily: 'Cairo',
     fontSize: 18,
   );
+
+  static const TextStyle body = TextStyle(
+    fontFamily: 'Cairo',
+    fontWeight: FontWeight.w400,
+    fontSize: 16,
+  );
 }

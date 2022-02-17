@@ -2,5 +2,7 @@
   "Flutter Festival": "Flutter Festival",
   "Home": "Home",
   "Custom": "Custom",
-  "Built-in": "Built-in"
+  "Built-in": "Built-in",
+  "built_in_implicit_animations_description": "Ready-to-use widgets that are easy to use and do not need an AnimationController",
+  "custom_implicit_animations_description": "Using TweenAnimationBuilder, you can create your own custom implicit animation that is easy to use and does not need an AnimationController",
 }
