@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
 class AnimatedPositionDirectionalExample extends StatefulWidget {
@@ -10,9 +11,9 @@ class AnimatedPositionDirectionalExample extends StatefulWidget {
 
 class _AnimatedPositionDirectionalExampleState extends State<AnimatedPositionDirectionalExample> {
   List<String> options = [
-    'First Option',
-    'Second Option',
-    'Third Option',
+    'First Item',
+    'Second Item',
+    'Third Item',
   ];
 
   int selectedOptionIndex = 0;
@@ -54,7 +55,7 @@ class _AnimatedPositionDirectionalExampleState extends State<AnimatedPositionDir
                       style: AppTextStyles.button.copyWith(color: selectedOptionIndex == index ? Colors.white : Colors.black),
                       duration: animationDuration,
                       child: Text(
-                        options[index],
+                        Translations.of(context)!.get(options[index]),
                         textAlign: TextAlign.center,
                       ),
                     ),

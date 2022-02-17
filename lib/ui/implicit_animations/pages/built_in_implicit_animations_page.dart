@@ -24,7 +24,7 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
       'widget': const AnimatedContainerExample(),
     },
     {
-      'title': 'AnimatedPositioned (or AnimatedPositionDirectional)',
+      'title': 'AnimatedPositioned (or AnimatedPositionDirectional) & AnimatedDefaultTextStyle',
       'widget': const AnimatedPositionDirectionalExample(),
     },
   ];
