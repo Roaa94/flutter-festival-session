@@ -33,6 +33,15 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(
           titleTextStyle: AppTextStyles.appBarTextStyle,
         ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+            textStyle: AppTextStyles.button,
+          ),
+        ),
       ),
       home: const HomePage(),
     );

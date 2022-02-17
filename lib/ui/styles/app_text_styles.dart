@@ -21,4 +21,11 @@ class AppTextStyles {
     fontSize: 16,
     color: Colors.black,
   );
+
+  static const TextStyle button = TextStyle(
+    fontFamily: 'Cairo',
+    fontWeight: FontWeight.w400,
+    fontSize: 16,
+    color: Colors.white,
+  );
 }

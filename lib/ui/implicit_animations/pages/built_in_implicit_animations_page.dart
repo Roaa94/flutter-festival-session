@@ -72,6 +72,22 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
             ),
             Column(
               children: [
+                ...List.generate(
+                  builtInImplicitAnimationWidgets.length,
+                      (index) => Column(
+                    children: [
+                      Text(
+                        builtInImplicitAnimationWidgets[index]['title'],
+                        style: AppTextStyles.h1,
+                      ),
+                      Container(
+                        child: builtInImplicitAnimationWidgets[index]['widget'],
+                        color: Colors.deepPurple.shade100,
+                      ),
+                      const SizedBox(height: 20),
+                    ],
+                  ),
+                ),
                 const Text(
                   'AnimatedAlign',
                   style: AppTextStyles.h1,
@@ -89,22 +105,6 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
                 const SizedBox(height: 20),
               ],
             ),
-            ...List.generate(
-              builtInImplicitAnimationWidgets.length,
-              (index) => Column(
-                children: [
-                  Text(
-                    builtInImplicitAnimationWidgets[index]['title'],
-                    style: AppTextStyles.h1,
-                  ),
-                  Container(
-                    child: builtInImplicitAnimationWidgets[index]['widget'],
-                    color: Colors.deepPurple.shade100,
-                  ),
-                  const SizedBox(height: 20),
-                ],
-              ),
-            )
           ],
         ),
       ),
