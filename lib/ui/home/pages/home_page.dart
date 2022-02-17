@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
             Expanded(
               child: AnimationTypeContainer(
                 title: 'Implicit Animations',
+                subtitle: 'No need for AnimationController',
                 onCustomPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (_) => const CustomImplicitAnimationsPage()),
@@ -38,6 +39,7 @@ class HomePage extends StatelessWidget {
             Expanded(
               child: AnimationTypeContainer(
                 title: 'Explicit Animations',
+                subtitle: 'Uses an AnimationController',
                 onCustomPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (_) => const CustomExplicitAnimationsPage()),

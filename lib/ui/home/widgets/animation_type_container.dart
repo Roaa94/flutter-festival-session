@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/home/widgets/animation_sub_type_container.dart';
 import 'package:flutter_festival/ui/styles/app_colors.dart';
+import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
 class AnimationTypeContainer extends StatelessWidget {
   final String title;
+  final String subtitle;
   final VoidCallback onBuiltInPressed;
   final VoidCallback onCustomPressed;
 
   const AnimationTypeContainer({
     Key? key,
     required this.title,
+    required this.subtitle,
     required this.onBuiltInPressed,
     required this.onCustomPressed,
   }) : super(key: key);
@@ -32,9 +36,17 @@ class AnimationTypeContainer extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 40, bottom: 20),
-            child: Text(
-              title,
-              style: const TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.w600),
+            child: Column(
+              children: [
+                Text(
+                  title,
+                  style: const TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.w600),
+                ),
+                Text(
+                  Translations.of(context)!.get(subtitle),
+                  style: AppTextStyles.button,
+                ),
+              ],
             ),
           ),
           Expanded(

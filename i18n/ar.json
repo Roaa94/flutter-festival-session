@@ -11,5 +11,7 @@
   "Change The Container": "غير الـ Container",
   "First Item": "العنصر الأول",
   "Second Item": "العنصر الثاني",
-  "Third Item": "العنصر الثالث"
+  "Third Item": "العنصر الثالث",
+  "No need for AnimationController": "لا تحتاج لـ AnimationController",
+  "Uses an AnimationController": "تستخدم AnimationController"
 }

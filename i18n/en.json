@@ -11,5 +11,7 @@
   "Change The Container": "Change The Container",
   "First Item": "First Item",
   "Second Item": "Second Item",
-  "Third Item": "Third Item"
+  "Third Item": "Third Item",
+  "No need for AnimationController": "No need for AnimationController",
+  "Uses an AnimationController": "Uses an AnimationController"
 }
