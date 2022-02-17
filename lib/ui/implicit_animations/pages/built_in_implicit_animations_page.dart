@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_align_and_opacity_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_container_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_positioned_directional_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_position_directional_example.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
 // Built-in Implicit Animations Widgets
