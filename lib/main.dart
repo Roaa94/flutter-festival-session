@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
       locale: Locale(SettingsProvider.appLanguages[0].locale),
       supportedLocales: SettingsProvider.appLanguages.map((appLanguage) => Locale(appLanguage.locale)).toList(),
       theme: ThemeData(
+        fontFamily: 'Cairo',
         primaryColor: Colors.deepPurple,
         primarySwatch: Colors.deepPurple,
       ),
