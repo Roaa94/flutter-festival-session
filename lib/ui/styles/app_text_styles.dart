@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class AppTextStyles {
   static const TextStyle appBarTextStyle = TextStyle(
@@ -11,11 +12,13 @@ class AppTextStyles {
     fontFamily: 'Cairo',
     fontWeight: FontWeight.w700,
     fontSize: 20,
+    color: Colors.black,
   );
 
   static const TextStyle body = TextStyle(
     fontFamily: 'Cairo',
     fontWeight: FontWeight.w400,
     fontSize: 16,
+    color: Colors.black,
   );
 }

@@ -5,4 +5,7 @@
   "Built-in": "Built-in",
   "built_in_implicit_animations_description": "Ready-to-use widgets that are easy to use and do not need an AnimationController",
   "custom_implicit_animations_description": "Using TweenAnimationBuilder, you can create your own custom implicit animation that is easy to use and does not need an AnimationController",
+  "dummy_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue mauris mi, sit amet interdum ipsum pellentesque sed. Suspendisse a dignissim ipsum, sit amet varius lacus. Curabitur tincidunt imperdiet erat vel placerat. Pellentesque pulvinar neque est, sed convallis magna tincidunt sit amet.",
+  "Tap to Read More...": "Tap to Read More...",
+  "More Text": "More Text"
 }

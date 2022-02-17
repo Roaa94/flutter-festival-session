@@ -4,5 +4,8 @@
   "Custom": "تحتاج تخصيص",
   "Built-in": "جاهزة للاستخدام",
   "built_in_implicit_animations_description": "Widgets جاهزة للاستخدام بطريقة سهلة ومباشرة من دون الحاجة لـ AnimationController",
-  "custom_implicit_animations_description": "باستخدام TweenAnimationBuilder, يمكنك ان تصنع Implicit Animation Widget بالخصائص التي تريدها ومن ثم تستخدمها بسهولة من دون الحاجة لـ AnimationController"
+  "custom_implicit_animations_description": "باستخدام TweenAnimationBuilder, يمكنك ان تصنع Implicit Animation Widget بالخصائص التي تريدها ومن ثم تستخدمها بسهولة من دون الحاجة لـ AnimationController",
+  "dummy_text": "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور.",
+  "Tap to Read More...": "اضغط لتقرأ المزيد",
+  "More Text": "كمالة النص"
 }

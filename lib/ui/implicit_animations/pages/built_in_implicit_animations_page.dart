@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_align_example.dart';
+import 'package:flutter_festival/ui/implicit_animations/widgets/animated_align_and_opacity_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_container_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_default_text_style_example.dart';
-import 'package:flutter_festival/ui/implicit_animations/widgets/animated_opacity_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_padding_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_physical_model_example.dart';
 import 'package:flutter_festival/ui/implicit_animations/widgets/animated_positioned_directional_example.dart';
@@ -26,20 +25,12 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
 
   final List<Map<String, dynamic>> builtInImplicitAnimationWidgets = [
     {
-      'title': 'AnimatedAlign',
-      'widget': const AnimatedAlignExample(),
-    },
-    {
       'title': 'AnimatedContainer',
       'widget': const AnimatedContainerExample(),
     },
     {
       'title': 'AnimatedDefaultTextStyle',
       'widget': const AnimatedDefaultTextStyleExample(),
-    },
-    {
-      'title': 'AnimatedOpacity',
-      'widget': const AnimatedOpacityExample(),
     },
     {
       'title': 'AnimatedPadding',
@@ -79,6 +70,25 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
                 style: AppTextStyles.body,
               ),
             ),
+            Column(
+              children: [
+                const Text(
+                  'AnimatedAlign',
+                  style: AppTextStyles.h1,
+                ),
+                const Text('&'),
+                const Text(
+                  'AnimatedOpacity',
+                  style: AppTextStyles.h1,
+                ),
+                const SizedBox(height: 10),
+                Container(
+                  child: const AnimatedAlignAndOpacityExample(),
+                  color: Colors.deepPurple.shade100,
+                ),
+                const SizedBox(height: 20),
+              ],
+            ),
             ...List.generate(
               builtInImplicitAnimationWidgets.length,
               (index) => Column(
@@ -87,7 +97,10 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
                     builtInImplicitAnimationWidgets[index]['title'],
                     style: AppTextStyles.h1,
                   ),
-                  builtInImplicitAnimationWidgets[index]['widget'],
+                  Container(
+                    child: builtInImplicitAnimationWidgets[index]['widget'],
+                    color: Colors.deepPurple.shade100,
+                  ),
                   const SizedBox(height: 20),
                 ],
               ),
