@@ -21,8 +21,8 @@ class _RotationAndSizeTransitionExampleState
     // custom animation when the animated value is a double and you need to animate
     // exclusively between 0 => 1
     _controller = AnimationController(
-      vsync: this,
       duration: const Duration(milliseconds: 300),
+      vsync: this,
     );
     super.initState();
   }
