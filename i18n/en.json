@@ -15,5 +15,6 @@
   "No need for AnimationController": "No need for AnimationController",
   "Uses an AnimationController": "Uses an AnimationController",
   "built_in_explicit_animations_description": "Built-in Transition widgets with ready-to-use animatable properties using an AnimationController",
-  "Show Image": "Show Image"
+  "Show Image": "Show Image",
+  "custom_explicit_animations_description": "If the animation you have in mind absolutely cannot be created using any of the previously mentioned widgets and approaches, you can use the AnimatedWidget and AnimatedBuilder widgets to create highly customizable widgets"
 }

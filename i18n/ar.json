@@ -15,5 +15,6 @@
   "No need for AnimationController": "لا تحتاج لـ AnimationController",
   "Uses an AnimationController": "تستخدم AnimationController",
   "built_in_explicit_animations_description": "Transition widgets جاهزة للاستخدام بخصائص معرفة مسبقا يتم تحريكها باستخدام AnimationController",
-  "Show Image": "اظهر الصورة"
+  "Show Image": "اظهر الصورة",
+  "custom_explicit_animations_description": "اذا كل الWidgets والطرق السابقة كانت غير كافية لصنع الAnimation التي ترغبها, يمكنك استخدام AnimatedWidget و AnimatedBuilder لصنع Animation قابلة للتخصيص بشكل واسع جداً"
 }
