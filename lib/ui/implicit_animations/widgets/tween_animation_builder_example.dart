@@ -25,7 +25,7 @@ class _TweenAnimationBuilderExampleState
             value: _sliderValue,
             onChanged: (value) => setState(() {
               _sliderValue = value;
-              _newColor = Color.lerp(Colors.white, Colors.red, _sliderValue);
+              _newColor = Color.lerp(Colors.white, Colors.blue, _sliderValue);
             }),
           ),
         ),
@@ -35,11 +35,12 @@ class _TweenAnimationBuilderExampleState
           child: TweenAnimationBuilder(
             tween: ColorTween(begin: Colors.white, end: _newColor),
             duration: const Duration(milliseconds: 200),
+            child: Image.asset('assets/images/fire.png'),
             builder: (BuildContext context, Color? color, Widget? child) {
               return ColorFiltered(
                 colorFilter: ColorFilter.mode(
                     color ?? Colors.transparent, BlendMode.modulate),
-                child: Image.asset('assets/images/fire.png'),
+                child: child,
               );
             },
           ),
