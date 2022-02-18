@@ -30,7 +30,8 @@ class BuiltInExplicitAnimationsPage extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
-              child: Text(Translations.of(context)!.get('built_in_explicit_animations_description')),
+              child: Text(Translations.of(context)!
+                  .get('built_in_explicit_animations_description')),
             ),
             const Text(
               'RotationTransition',

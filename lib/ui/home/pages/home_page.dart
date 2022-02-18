@@ -25,12 +25,14 @@ class HomePage extends StatelessWidget {
                 subtitle: 'No need for AnimationController',
                 onCustomPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const CustomImplicitAnimationsPage()),
+                    MaterialPageRoute(
+                        builder: (_) => const CustomImplicitAnimationsPage()),
                   );
                 },
                 onBuiltInPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => BuiltInImplicitAnimationsPage()),
+                    MaterialPageRoute(
+                        builder: (_) => BuiltInImplicitAnimationsPage()),
                   );
                 },
               ),
@@ -42,12 +44,14 @@ class HomePage extends StatelessWidget {
                 subtitle: 'Uses an AnimationController',
                 onCustomPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const CustomExplicitAnimationsPage()),
+                    MaterialPageRoute(
+                        builder: (_) => const CustomExplicitAnimationsPage()),
                   );
                 },
                 onBuiltInPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const BuiltInExplicitAnimationsPage()),
+                    MaterialPageRoute(
+                        builder: (_) => const BuiltInExplicitAnimationsPage()),
                   );
                 },
               ),

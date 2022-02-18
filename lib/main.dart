@@ -24,7 +24,9 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       locale: Locale(SettingsProvider.appLanguages[0].locale),
-      supportedLocales: SettingsProvider.appLanguages.map((appLanguage) => Locale(appLanguage.locale)).toList(),
+      supportedLocales: SettingsProvider.appLanguages
+          .map((appLanguage) => Locale(appLanguage.locale))
+          .toList(),
       theme: ThemeData(
         fontFamily: 'Cairo',
         scaffoldBackgroundColor: Colors.grey.shade300,

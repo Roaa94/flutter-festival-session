@@ -6,10 +6,13 @@ class RotationAndSizeTransitionExample extends StatefulWidget {
   const RotationAndSizeTransitionExample({Key? key}) : super(key: key);
 
   @override
-  _RotationAndSizeTransitionExampleState createState() => _RotationAndSizeTransitionExampleState();
+  _RotationAndSizeTransitionExampleState createState() =>
+      _RotationAndSizeTransitionExampleState();
 }
 
-class _RotationAndSizeTransitionExampleState extends State<RotationAndSizeTransitionExample> with SingleTickerProviderStateMixin {
+class _RotationAndSizeTransitionExampleState
+    extends State<RotationAndSizeTransitionExample>
+    with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
 
   @override

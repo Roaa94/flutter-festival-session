@@ -7,7 +7,8 @@ class AlignTransitionExample extends StatefulWidget {
   _AlignTransitionExampleState createState() => _AlignTransitionExampleState();
 }
 
-class _AlignTransitionExampleState extends State<AlignTransitionExample> with SingleTickerProviderStateMixin {
+class _AlignTransitionExampleState extends State<AlignTransitionExample>
+    with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   late final Animation<AlignmentGeometry> _animation;
 

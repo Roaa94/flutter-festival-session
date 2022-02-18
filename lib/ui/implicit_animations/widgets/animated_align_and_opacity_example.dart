@@ -6,10 +6,12 @@ class AnimatedAlignAndOpacityExample extends StatefulWidget {
   const AnimatedAlignAndOpacityExample({Key? key}) : super(key: key);
 
   @override
-  _AnimatedAlignAndOpacityExampleState createState() => _AnimatedAlignAndOpacityExampleState();
+  _AnimatedAlignAndOpacityExampleState createState() =>
+      _AnimatedAlignAndOpacityExampleState();
 }
 
-class _AnimatedAlignAndOpacityExampleState extends State<AnimatedAlignAndOpacityExample> {
+class _AnimatedAlignAndOpacityExampleState
+    extends State<AnimatedAlignAndOpacityExample> {
   final Duration animationDuration = const Duration(milliseconds: 300);
   bool expanded = false;
 
@@ -24,12 +26,17 @@ class _AnimatedAlignAndOpacityExampleState extends State<AnimatedAlignAndOpacity
           children: [
             Positioned.fill(
               child: Container(
-                decoration: BoxDecoration(color: Colors.deepPurple.shade300, borderRadius: BorderRadius.circular(15)),
+                decoration: BoxDecoration(
+                    color: Colors.deepPurple.shade300,
+                    borderRadius: BorderRadius.circular(15)),
                 child: AnimatedAlign(
-                  alignment: expanded ? const AlignmentDirectional(-0.9, -1.25) : Alignment.center,
+                  alignment: expanded
+                      ? const AlignmentDirectional(-0.9, -1.25)
+                      : Alignment.center,
                   duration: animationDuration,
                   child: Text(
-                    Translations.of(context)!.get(expanded ? 'More Text' : 'Tap to Read More...'),
+                    Translations.of(context)!
+                        .get(expanded ? 'More Text' : 'Tap to Read More...'),
                     style: AppTextStyles.h1,
                   ),
                 ),

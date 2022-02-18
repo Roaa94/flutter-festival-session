@@ -17,13 +17,15 @@ class Translations {
   }
 
   // Static member to have a simple access to the delegate from the MaterialApp
-  static const LocalizationsDelegate<Translations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<Translations> delegate =
+      _AppLocalizationsDelegate();
 
   late Map<String, String> _localizedStrings;
 
   Future<bool> load() async {
     // Load the language JSON file from the "lang" folder
-    String jsonString = await rootBundle.loadString('i18n/${locale.languageCode}.json');
+    String jsonString =
+        await rootBundle.loadString('i18n/${locale.languageCode}.json');
     Map<String, dynamic> jsonMap = json.decode(jsonString);
 
     _localizedStrings = jsonMap.map((key, value) {
@@ -61,7 +63,10 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<Translations> {
   @override
   bool isSupported(Locale locale) {
     // Include all of your supported language codes here
-    return SettingsProvider.appLanguages.map((language) => language.locale).toList().contains(locale.languageCode);
+    return SettingsProvider.appLanguages
+        .map((language) => language.locale)
+        .toList()
+        .contains(locale.languageCode);
   }
 
   @override

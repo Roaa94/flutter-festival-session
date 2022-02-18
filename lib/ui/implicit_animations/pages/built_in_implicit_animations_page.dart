@@ -24,7 +24,8 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
       'widget': const AnimatedContainerExample(),
     },
     {
-      'title': 'AnimatedPositioned (or AnimatedPositionDirectional) & AnimatedDefaultTextStyle',
+      'title':
+          'AnimatedPositioned (or AnimatedPositionDirectional) & AnimatedDefaultTextStyle',
       'widget': const AnimatedPositionDirectionalExample(),
     },
   ];
@@ -41,7 +42,8 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
               child: Text(
-                Translations.of(context)!.get('built_in_implicit_animations_description'),
+                Translations.of(context)!
+                    .get('built_in_implicit_animations_description'),
                 style: AppTextStyles.body,
               ),
             ),
@@ -63,7 +65,7 @@ class BuiltInImplicitAnimationsPage extends StatelessWidget {
                         child: builtInImplicitAnimationWidgets[index]['widget'],
                         color: Colors.deepPurple.shade100,
                       ),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 100),
                     ],
                   ),
                 ),

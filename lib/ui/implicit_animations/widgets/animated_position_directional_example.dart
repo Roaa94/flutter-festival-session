@@ -6,10 +6,12 @@ class AnimatedPositionDirectionalExample extends StatefulWidget {
   const AnimatedPositionDirectionalExample({Key? key}) : super(key: key);
 
   @override
-  _AnimatedPositionDirectionalExampleState createState() => _AnimatedPositionDirectionalExampleState();
+  _AnimatedPositionDirectionalExampleState createState() =>
+      _AnimatedPositionDirectionalExampleState();
 }
 
-class _AnimatedPositionDirectionalExampleState extends State<AnimatedPositionDirectionalExample> {
+class _AnimatedPositionDirectionalExampleState
+    extends State<AnimatedPositionDirectionalExample> {
   List<String> options = [
     'First Item',
     'Second Item',
@@ -22,7 +24,8 @@ class _AnimatedPositionDirectionalExampleState extends State<AnimatedPositionDir
 
   @override
   Widget build(BuildContext context) {
-    double indicatorWidth = (MediaQuery.of(context).size.width - 17 * 2) / options.length;
+    double indicatorWidth =
+        (MediaQuery.of(context).size.width - 17 * 2) / options.length;
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
@@ -52,7 +55,10 @@ class _AnimatedPositionDirectionalExampleState extends State<AnimatedPositionDir
                   child: GestureDetector(
                     onTap: () => setState(() => selectedOptionIndex = index),
                     child: AnimatedDefaultTextStyle(
-                      style: AppTextStyles.button.copyWith(color: selectedOptionIndex == index ? Colors.white : Colors.black),
+                      style: AppTextStyles.button.copyWith(
+                          color: selectedOptionIndex == index
+                              ? Colors.white
+                              : Colors.black),
                       duration: animationDuration,
                       child: Text(
                         Translations.of(context)!.get(options[index]),

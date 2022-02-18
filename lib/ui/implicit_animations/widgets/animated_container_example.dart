@@ -5,7 +5,8 @@ class AnimatedContainerExample extends StatefulWidget {
   const AnimatedContainerExample({Key? key}) : super(key: key);
 
   @override
-  _AnimatedContainerExampleState createState() => _AnimatedContainerExampleState();
+  _AnimatedContainerExampleState createState() =>
+      _AnimatedContainerExampleState();
 }
 
 class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
@@ -28,7 +29,9 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
             width: animationToggle ? 150 : 100,
             height: animationToggle ? 150 : 100,
             decoration: BoxDecoration(
-              color: animationToggle ? Colors.redAccent.shade400 : Colors.deepPurple,
+              color: animationToggle
+                  ? Colors.redAccent.shade400
+                  : Colors.deepPurple,
               borderRadius: BorderRadius.circular(animationToggle ? 20 : 75),
               boxShadow: [
                 BoxShadow(

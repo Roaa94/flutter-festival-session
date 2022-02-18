@@ -6,10 +6,12 @@ class TweenAnimationBuilderExample extends StatefulWidget {
   const TweenAnimationBuilderExample({Key? key}) : super(key: key);
 
   @override
-  _TweenAnimationBuilderExampleState createState() => _TweenAnimationBuilderExampleState();
+  _TweenAnimationBuilderExampleState createState() =>
+      _TweenAnimationBuilderExampleState();
 }
 
-class _TweenAnimationBuilderExampleState extends State<TweenAnimationBuilderExample> {
+class _TweenAnimationBuilderExampleState
+    extends State<TweenAnimationBuilderExample> {
   double _sliderValue = 0;
   Color? _newColor = Colors.white;
 
@@ -35,7 +37,8 @@ class _TweenAnimationBuilderExampleState extends State<TweenAnimationBuilderExam
             duration: const Duration(milliseconds: 200),
             builder: (BuildContext context, Color? color, Widget? child) {
               return ColorFiltered(
-                colorFilter: ColorFilter.mode(color ?? Colors.transparent, BlendMode.modulate),
+                colorFilter: ColorFilter.mode(
+                    color ?? Colors.transparent, BlendMode.modulate),
                 child: Image.asset('assets/images/fire.png'),
               );
             },

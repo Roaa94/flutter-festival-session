@@ -19,7 +19,8 @@ class CustomImplicitAnimationsPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
               child: Text(
-                Translations.of(context)!.get('custom_implicit_animations_description'),
+                Translations.of(context)!
+                    .get('custom_implicit_animations_description'),
                 style: AppTextStyles.body,
               ),
             ),

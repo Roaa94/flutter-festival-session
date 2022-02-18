@@ -25,7 +25,8 @@ class AnimationTypeContainer extends StatelessWidget {
       width: double.infinity,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(colors: [AppColors.primary, AppColors.primaryAccent]),
+        gradient: const LinearGradient(
+            colors: [AppColors.primary, AppColors.primaryAccent]),
         boxShadow: [
           BoxShadow(color: Colors.black.withOpacity(0.5), blurRadius: 10),
         ],
@@ -40,7 +41,10 @@ class AnimationTypeContainer extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: const TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.w600),
+                  style: const TextStyle(
+                      fontSize: 22,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600),
                 ),
                 Text(
                   Translations.of(context)!.get(subtitle),
