@@ -48,9 +48,9 @@ class BuiltInExplicitAnimationsPage extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 17, vertical: 20),
               child: const RotationAndSizeTransitionExample(),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 100),
             const Text(
-              'PositionedTransition',
+              'AlignTransition',
               style: AppTextStyles.h1,
             ),
             const SizedBox(height: 10),
