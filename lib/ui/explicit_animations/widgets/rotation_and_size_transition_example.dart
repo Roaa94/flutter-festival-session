@@ -14,6 +14,7 @@ class _RotationAndSizeTransitionExampleState
     extends State<RotationAndSizeTransitionExample>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
+  late final Animation<double> _rotationAnimation;
 
   @override
   void initState() {
@@ -24,6 +25,7 @@ class _RotationAndSizeTransitionExampleState
       duration: const Duration(milliseconds: 300),
       vsync: this,
     );
+    _rotationAnimation = Tween<double>(begin: 0, end: 0.5).animate(_controller);
     super.initState();
   }
 
@@ -62,7 +64,7 @@ class _RotationAndSizeTransitionExampleState
                   ),
                   RotationTransition(
                     alignment: Alignment.center,
-                    turns: _controller,
+                    turns: _rotationAnimation,
                     child: const Icon(
                       Icons.keyboard_arrow_down,
                       color: Colors.white,
