@@ -22,6 +22,12 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample>
   }
 
   @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
