@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_festival/i18n/translations.dart';
+import 'package:flutter_festival/ui/explicit_animations/widgets/animated_builder_example.dart';
 import 'package:flutter_festival/ui/explicit_animations/widgets/animated_widget_example.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 
@@ -20,12 +21,19 @@ class CustomExplicitAnimationsPage extends StatelessWidget {
               child: Text(Translations.of(context)!
                   .get('custom_explicit_animations_description')),
             ),
-            Text(
+            const Text(
+              'AnimatedBuilder',
+              style: AppTextStyles.h1,
+            ),
+            const SizedBox(height: 10),
+            const AnimatedBuilderExample(),
+            const SizedBox(height: 100),
+            const Text(
               'AnimatedWidget',
               style: AppTextStyles.h1,
             ),
             const SizedBox(height: 10),
-            AnimatedWidgetExample(),
+            const AnimatedWidgetExample(),
           ],
         ),
       ),
