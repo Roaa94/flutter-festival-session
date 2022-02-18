@@ -13,12 +13,12 @@ class AnimatedAlignAndOpacityExample extends StatefulWidget {
 class _AnimatedAlignAndOpacityExampleState
     extends State<AnimatedAlignAndOpacityExample> {
   final Duration animationDuration = const Duration(milliseconds: 300);
-  bool expanded = false;
+  bool showText = false;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => setState(() => expanded = !expanded),
+      onTap: () => setState(() => showText = !showText),
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 17),
         width: double.infinity,
@@ -30,26 +30,24 @@ class _AnimatedAlignAndOpacityExampleState
                     color: Colors.deepPurple.shade300,
                     borderRadius: BorderRadius.circular(15)),
                 child: AnimatedAlign(
-                  alignment: expanded
+                  alignment: showText
                       ? const AlignmentDirectional(-0.9, -1.25)
                       : Alignment.center,
                   duration: animationDuration,
                   child: Text(
                     Translations.of(context)!
-                        .get(expanded ? 'More Text' : 'Tap to Read More...'),
+                        .get(showText ? 'More Text' : 'Tap to Read More...'),
                     style: AppTextStyles.h1,
                   ),
                 ),
               ),
             ),
             AnimatedOpacity(
-              opacity: expanded ? 1 : 0,
+              opacity: showText ? 1 : 0,
               duration: animationDuration,
               child: Padding(
                 padding: const EdgeInsets.all(10),
-                child: Text(
-                  Translations.of(context)!.get('dummy_text'),
-                ),
+                child: Text(Translations.of(context)!.get('dummy_text')),
               ),
             )
           ],
