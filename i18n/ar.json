@@ -13,5 +13,7 @@
   "Second Item": "العنصر الثاني",
   "Third Item": "العنصر الثالث",
   "No need for AnimationController": "لا تحتاج لـ AnimationController",
-  "Uses an AnimationController": "تستخدم AnimationController"
+  "Uses an AnimationController": "تستخدم AnimationController",
+  "built_in_explicit_animations_description": "Transition widgets جاهزة للاستخدام بخصائص معرفة مسبقا يتم تحريكها باستخدام AnimationController",
+  "Show Image": "اظهر الصورة"
 }

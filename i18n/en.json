@@ -13,5 +13,7 @@
   "Second Item": "Second Item",
   "Third Item": "Third Item",
   "No need for AnimationController": "No need for AnimationController",
-  "Uses an AnimationController": "Uses an AnimationController"
+  "Uses an AnimationController": "Uses an AnimationController",
+  "built_in_explicit_animations_description": "Built-in Transition widgets with ready-to-use animatable properties using an AnimationController",
+  "Show Image": "Show Image"
 }
