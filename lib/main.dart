@@ -5,6 +5,7 @@ import 'package:flutter_festival/domain/service_locator.dart';
 import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/home/pages/home_page.dart';
 import 'package:flutter_festival/ui/providers/settings_provider.dart';
+import 'package:flutter_festival/ui/styles/app_colors.dart';
 import 'package:flutter_festival/ui/styles/app_text_styles.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
@@ -33,7 +34,6 @@ class MyApp extends StatelessWidget {
       child: Consumer<SettingsProvider>(
         child: const HomePage(),
         builder: (c, settingsProvider, home) {
-          print(settingsProvider.currentLocale);
           return MaterialApp(
             title: 'Flutter Festival Session',
             debugShowCheckedModeBanner: false,
@@ -55,6 +55,7 @@ class MyApp extends StatelessWidget {
               appBarTheme: const AppBarTheme(
                 titleTextStyle: AppTextStyles.appBarTextStyle,
               ),
+              canvasColor: AppColors.primary,
               elevatedButtonTheme: ElevatedButtonThemeData(
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(

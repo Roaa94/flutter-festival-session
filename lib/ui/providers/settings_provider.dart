@@ -16,6 +16,9 @@ class SettingsProvider with ChangeNotifier {
   // (Platform from dart:ui doesn't work on the web)
   String currentLocale = kIsWeb ? 'ar' : Platform.localeName.substring(0, 2);
 
+  AppLanguage get currentAppLanguage =>
+      appLanguages.firstWhere((language) => language.locale == currentLocale);
+
   void _getCurrentLocaleFromStorage() {
     currentLocale =
         _storageService.get(StorageKeys.localeCode) ?? Platform.localeName;

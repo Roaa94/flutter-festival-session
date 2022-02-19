@@ -3,6 +3,7 @@ import 'package:flutter_festival/i18n/translations.dart';
 import 'package:flutter_festival/ui/explicit_animations/pages/built_in_explicit_animations_page.dart';
 import 'package:flutter_festival/ui/explicit_animations/pages/custom_explicit_animations_page.dart';
 import 'package:flutter_festival/ui/home/widgets/animation_type_container.dart';
+import 'package:flutter_festival/ui/home/widgets/language_dropdown.dart';
 import 'package:flutter_festival/ui/implicit_animations/pages/built_in_implicit_animations_page.dart';
 import 'package:flutter_festival/ui/implicit_animations/pages/custom_implicit_animations_page.dart';
 
@@ -14,6 +15,9 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(Translations.of(context)!.get('Home')),
+        actions: const [
+          LanguageDropdown(),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 17, horizontal: 7),
