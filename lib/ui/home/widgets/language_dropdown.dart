@@ -15,6 +15,7 @@ class LanguageDropdown extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
           child: DropdownButton<AppLanguage>(
+            focusColor: Colors.transparent,
             value: settingsProvider.currentAppLanguage,
             icon: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 5),
