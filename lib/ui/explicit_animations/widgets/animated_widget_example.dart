@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_festival/ui/explicit_animations/widgets/gradient_transition.dart';
 
 class AnimatedWidgetExample extends StatefulWidget {
   const AnimatedWidgetExample({Key? key}) : super(key: key);
