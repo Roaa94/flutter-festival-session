@@ -1,4 +1,4 @@
-# Source Code for the App Used in The Flutter Festival Saudi Arabia Session
+# Source Code for the App Used in The Flutter Festival Saudi Arabia Session (Arabic) & The Flutter Festival Valsad & Surat Session (English)
 
 <a href="https://www.youtube.com/watch?v=mntW9gU46OM" target="blank">
 <img src="https://user-images.githubusercontent.com/50345358/154803991-a54b540f-784d-45ef-891a-72bac64b09d6.jpeg" alt="Flutter Festival Saudi Arabia Cover" width="50%"/>
